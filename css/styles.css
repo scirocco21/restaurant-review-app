@@ -202,16 +202,16 @@ nav h1 a {
 
 /* ====================== Restaurant Details ====================== */
 .wrapper {
-	display:flex;
+	display: flex;
  	justify-content: center;
-	align-items:center;
-	flex-direction:column;
+	align-items: center;
+	flex-direction: column;
 }
 .inside header {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 1000;
+	z-index: 1;
 }
 .inside #map {
   background-color: #ccc;
@@ -253,23 +253,23 @@ nav h1 a {
 	width: 75%;
 }
 #restaurant-container{
-  display:flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width:100%;
-  padding-top:2em;
+  width: 100%;
+  padding-top: 3em;
 	margin-top: 150px;
 }
 #reviews-container {
   border-bottom: 1px solid #d9d9d9;
   border-top: 1px solid #fff;
-  padding: 140px 40px 30px;
   width: 75%;
-	display:flex;
- 	flex-direction: column;
-	justify-content: center;
- 	align-items: center;
+  padding-top: 3em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 #reviews-container h2 {
   color: #f58500;
@@ -285,6 +285,7 @@ nav h1 a {
 #reviews-list li {
   background-color: #fff;
   border: 2px solid #f3f3f3;
+	border-radius: 15px;
   display: block;
   list-style-type: none;
   margin: 0 0 30px;
@@ -297,4 +298,19 @@ nav h1 a {
 }
 #restaurant-hours td {
   color: #666;
+	text-align: center;
+}
+
+#review-header p {
+	display: inline-block;
+	justify-content: center;
+	align-items: center;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 15px;
+	font-size: 15px;
+}
+
+#review-header hr {
+	border-top: 1px solid #f58500;
 }
