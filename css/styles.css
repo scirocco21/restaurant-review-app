@@ -18,7 +18,7 @@ ul, li {
 	color: #333;
 }
 a {
-	color: orange;
+	color: #d46d08;
 	text-decoration: none;
 }
 a:hover, a:focus {
@@ -33,17 +33,18 @@ a img{
 	padding: 0;
 	list-style-type: none;
 }
-.skip {
+a.skip {
 	position: absolute;
 	top: -40px;
+	z-index: 100;
+	padding: 5px;
 	background: orange;
 	text-decoration: none;
 	font-size: 12px;
-	padding: 5px;
-	z-index: 100;
 }
-.skip:focus {
-	top: 0;
+a.skip:focus {
+	left: 0;
+  top: 0;
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: Arial, Helvetica, sans-serif;
@@ -139,7 +140,7 @@ nav h1 a {
   width: 100%;
 	/* height of 100% will scale div with the height of the elements it contains rather than letting the select boxes 'overflow' */
   height: 100%;
-  background-color: #3397DB;
+  background-color: #2a1eb6;
   align-items: center;
 	/* add all around padding for less crowded look */
 	padding: 10px;
@@ -196,7 +197,7 @@ nav h1 a {
   min-width: 100%;
 }
 #restaurants-list li h1 {
-  color: #f18200;
+  color: #d46d08;
   font-family: Arial,sans-serif;
   font-size: 14pt;
   font-weight: 200;
@@ -210,7 +211,7 @@ nav h1 a {
   font-size: 11pt;
 }
 #restaurants-list li a {
-  background-color: orange;
+  background-color: #d46d08;
   border-bottom: 3px solid #eee;
   color: #fff;
   display: inline-block;
@@ -246,7 +247,7 @@ nav h1 a {
   width: 100%;
 }
 #restaurant-name {
-  color: #f18200;
+  color: #d46d08;
   font-family: Arial,sans-serif;
   font-size: 20pt;
   font-weight: 200;
@@ -282,6 +283,7 @@ nav h1 a {
   width: 100%;
   padding-top: 3em;
 	margin-top: 150px;
+	/* TODO: round borders of restaurant cards */
 }
 #reviews-container {
   border-bottom: 1px solid #d9d9d9;
@@ -294,7 +296,7 @@ nav h1 a {
   align-items: center;
 }
 #reviews-container h2 {
-  color: #f58500;
+  color: #d46d08;
   font-size: 24pt;
   font-weight: 300;
   letter-spacing: -1px;
@@ -334,5 +336,5 @@ nav h1 a {
 }
 
 #review-header hr {
-	border-top: 1px solid #f58500;
+	border-top: 1px solid #d46d08;
 }
